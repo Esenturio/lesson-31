@@ -9,58 +9,77 @@
 </head>
 <body>
   
-  <header class="header">
+  <div class="wrapper">
+    <header class="header">
 
-    <div class="header__navbar">
-      <div class="container nav-container flex">
-
-        <span class="header__logo">Web.Dev</span>
-
-        <nav class="header__nav">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Testimonials</a>
-          <a href="#">Contact</a>
-        </nav>
-
-        <button class="hamburger hamburger--collapse" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-
-        <div class="header__buttons">
-          <button class="btn btn-short btn-light">Sign in</button>
-          <button class="btn btn-shadow">Sign up</button>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header__content">
-      <div class="flex">
-
-        <div class="header__image header__image-one">
-          <img src="" alt="">
-        </div>
-
-        <div class="header__info-main">
-          <h2 class="header__title"></h2>
-          <p class="header__info"></p>
-          <div class="header__links">
-            <a href="" class="btn btn-long btn-shadow">Contact Us</a>
-            <a href="#" class="btn btn-light btn-short underline">Watch Video</a>
+      <div class="header__navbar">
+        <div class="container nav-container flex header__main">
+  
+          <span class="header__logo mr-auto">Web.Dev</span>
+  
+          <nav class="header__nav flex">
+            <a href="#" class="header__link">Home</a>
+            <a href="#" class="header__link">About</a>
+            <a href="#" class="header__link">Testimonials</a>
+            <a href="#" class="header__link">Contact</a>
+          </nav>
+  
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+  
+          <div class="header__buttons ml-auto">
+            <button class="btn btn-short btn-light header__btn-media">Sign in</button>
+            <button class="btn btn-shadow ">Sign up</button>
           </div>
+  
         </div>
-
-        <div class="header__image header__image-two">
-          <img src="" alt="">
-        </div>
-
       </div>
-    </div>
+  
+      <div class="header__content">
+        <div class="flex">
+  
+          <div class="header__image header__image-one">
+            <img src="img/first-side.jpg" alt="">
+          </div>
+  
+          <div class="header__info-main mr-auto ml-auto">
+            <h2 class="header__title m-0">We Develop <span class="header__title-2 m-0">Shopify</span>  sites</h2>
+            <p class="header__info m-0">Slingback fabric heels. Thin wraparound ankle strap. Squared heel and toe. Pointed toes. Padded insole with geometrical design. </p>
+            <div class="header__links">
+              <a href="" class="btn btn-long btn-shadow">Contact Us</a>
+              <a href="#" class="btn btn-light btn-short underline">Watch Video</a>
+            </div>
+          </div>
+  
+          <div class="header__image header__image-two">
+            <img src="img/second-side.jpg" alt="">
+          </div>
+  
+        </div>
+      </div>
+  
+    </header>
+  </div>
 
-  </header>
+  
 
+
+
+
+  <script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    var header__nav = document.querySelector(".header__nav");
+    // On click
+    hamburger.addEventListener("click", function() {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
+      header__nav.classList.toggle("is-active");
+      // Do something else, like open/close menu
+    });
+  </script>
 </body>
 </html>
