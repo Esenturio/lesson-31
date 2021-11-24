@@ -1,5 +1,6 @@
-// .header__logo
-  // font-family: $girlou-bold
+$gilroy-reg: 'Gilroy'
+.header
+  font-family: $gilroy-reg
 .header__navbar
   padding: 2.5rem 0
   a
@@ -19,19 +20,34 @@
 .header__logo
   @include media(440px)
     padding-right: 0.625rem
+  font-family: $gilroy-bold
 
 
 
 
 //HEADER__CONTENT
+.header__content
+  padding: 4.2rem 0
 .header__info-main
   max-width: 32.5rem
   text-align: center
 .header__title
+  margin: 0 0 2.25rem 0
+  font-family: $gilroy-bold
   font-size: 4.875rem
   &-2
     color: $font-green
-
+.header__info
+  margin-bottom: 5rem
+  line-height: 1.6875rem
+.header__image
+  img
+    width: 100%
+    position: relative
+    @include media(992px)
+      display: none
+.header__links
+  flex-wrap: wrap-reverse
 
 
 
