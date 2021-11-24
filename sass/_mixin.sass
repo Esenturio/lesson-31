@@ -1,0 +1,14 @@
+@mixin media( $width )
+  @media screen and (min-width: $width)
+    @content
+@mixin flex($dir:null, $items:null, $jus:null)
+  display: flex
+  flex-direction: $dir
+  align-items: $items
+  justify-content: $jus
+@mixin grid($dir:null, $items:null, $col:null, $gap:null)
+  display: grid
+  flex-direction: $dir
+  align-items: $items
+  grid-template-columns: $col
+  grid-gap: $gap

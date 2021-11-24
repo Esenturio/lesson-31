@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
   <header class="header">
 
     <div class="header__navbar">
-      <div class="nav-container flex">
+      <div class="container nav-container flex">
 
         <span class="header__logo">Web.Dev</span>
 
@@ -22,6 +23,12 @@
           <a href="#">Contact</a>
         </nav>
 
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
         <div class="header__buttons">
           <button class="btn btn-short btn-light">Sign in</button>
           <button class="btn btn-shadow">Sign up</button>
@@ -31,7 +38,7 @@
     </div>
 
     <div class="header__content">
-      <div class="container flex">
+      <div class="flex">
 
         <div class="header__image header__image-one">
           <img src="" alt="">
