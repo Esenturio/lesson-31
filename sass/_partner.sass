@@ -1,0 +1,67 @@
+:root
+  --border-color: rgba(237, 237, 237)
+  --text-color: $font-color
+  --background-color: #fff
+  --link-color: rgba(49, 49, 49, 1)
+
+
+.partner
+  margin-bottom: 8.75rem
+.partner__min-nav
+  margin-bottom: 12.5rem
+.partner__nav
+  justify-content: space-between
+  flex-wrap: wrap
+.partner__image
+  margin: 0 auto
+  padding: 0.625rem 1.25rem
+
+.partner__info
+  text-align: center
+  font-weight: 300
+  margin-bottom: 5rem
+.partner__title
+  font-size: 2.8125rem
+
+.partner__main
+  @include grid(null, 2, 2.5rem)
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  margin-bottom: 5rem
+  @include media(700px)
+    grid-template-columns: repeat(1, 1fr)
+.partner__item
+  max-width: 400px
+  border-radius: 0.3125rem
+  padding: 2.5rem 1.875rem
+  *
+    margin: 0
+  @include media(700px)
+    margin: 0 auto
+.item-one
+  background-color: var(--background-color)
+  border: 1px solid var(--border-color)
+  color: var(--text-color)
+  --link-color: #49AD09
+.item__logo
+  margin-bottom: 1.875rem
+.item__image
+  margin-right: 0.9375rem
+  line-height: 1px
+.item__title
+  font-size: $s-22
+.item__info
+  margin-bottom: 1.875rem
+.item-link
+  color: var(--link-color)
+
+.partner__item:nth-child(2)
+  background-color: #E4F3DA
+
+.item-fou
+  background-color: rgba(49,49,49)
+  *
+    color: white
+
+.partner__item:first-child
+  box-shadow: 0px 100px 80px 0px rgba(49, 49, 49, 0.1)
